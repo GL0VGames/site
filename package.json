@@ -1,0 +1,17 @@
+{
+  "name": "GL0VGAMES",
+  "version": "0.0.0",
+  "author": "Graham Barber",
+  "description": "The website of GL0V Games.",
+  "dependencies": {
+    "bower": "*",
+    "gulp": "*",
+    "gulp-concat": "^2.5.2",
+    "gulp-connect": "*",
+    "gulp-html-replace": "*",
+    "gulp-jade": "*",
+    "gulp-less": "*",
+    "gulp-minify-html": "*",
+    "gulp-rsync": "*"
+  }
+}
