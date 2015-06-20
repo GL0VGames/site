@@ -8,4 +8,72 @@
 
 body {
 	background-color: @medGrey;
+	margin: 0;
+	overflow: hidden;
 }
+
+.square {
+	width: 200px;
+	height: 1000px;
+	position: absolute;
+	background-color: @darkGreen;
+}
+
+.nav {
+	height: 100%;
+	width: 100px;
+	position: absolute;
+	display: block;
+	background-color: rgba(41, 41, 41, 0.8);
+}
+
+.nav-item {
+	height: 33.3%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-item:hover {
+	animation: nav-hover 0.5s ease-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes nav-hover {
+	0% {
+		background-color: @medGrey;
+	}
+	100% {
+		background-color: rgba(22, 22, 22, 0.8);
+	}
+}
+
+@keyframes square-move {
+	0% {
+		top: 1050px;
+	}
+	100% {
+		top: -1050px;
+	}
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 3em;
+  height: 3em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: @lightGreen;
+}
+
+/*.svg-icon circle {
+  stroke: @lightGreen;
+  stroke-width: 1;
+}*/

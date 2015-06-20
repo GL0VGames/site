@@ -14,12 +14,12 @@ gulp.task("build", function () {
 		.pipe(minifyHTML())
 		.pipe(gulp.dest("dist/"));
 
-	gulp.src("src/less/*.less")
+	gulp.src("src/less/index.less")
 		.pipe(less())
 		.pipe(gulp.dest("dist/css/"));
 
-	gulp.src("src/js/*.js")
-		.pipe(gulp.dest("src/js/"));
+	gulp.src("src/js/index.js")
+		.pipe(gulp.dest("dist/js/"));
 
 });
 
