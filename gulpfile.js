@@ -44,8 +44,8 @@ gulp.task("deploy", ["build"], function () {
 	gulp.src("dist/")
 		.pipe(rsync({
 			root: "dist",
-			hostname: "monochromicon.me",
-			destination: "/var/web/home/",
+			hostname: "gl0vgames.com",
+			destination: "/usr/share/nginx/home/",
 			username: "root",
 			incremental: true,
 			progress: true,
