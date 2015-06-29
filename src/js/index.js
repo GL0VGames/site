@@ -13,7 +13,7 @@ $(document).ready(function () {
 		$(".square-container div").attr("class", "square");
 
 		for (var i = 0; i + 1 <= $("div.square").length; i++) {
-			positionB = i * barVar + 100;
+			positionB = i * barVar;
 			timeB = (Math.round(Math.random() * 100) / 10 + 3) + "s";
 
 			$(".square:nth-of-type(" + (i + 1) + ")")

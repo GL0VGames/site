@@ -18,7 +18,7 @@ gulp.task("build", function () {
 		.pipe(less())
 		.pipe(gulp.dest("dist/css/"));
 
-	gulp.src("src/js/index.js")
+	gulp.src("src/js/**.js")
 		.pipe(gulp.dest("dist/js/"));
 
 });

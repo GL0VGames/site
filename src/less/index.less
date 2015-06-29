@@ -12,19 +12,37 @@ body {
 	overflow: hidden;
 }
 
+.page-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
 .square {
 	width: 200px;
 	height: 1000px;
 	position: absolute;
 	background-color: @darkGreen;
+	z-index: -100000;
+}
+
+.content-container {
+	width: 90%;
+	height: 100%;
+	background-color: rgba(1, 1, 1, 0.8);
+	display: block;
+	left: 100px;
+	float: left;
+	clear: right;
 }
 
 .nav {
 	height: 100%;
-	width: 100px;
-	position: absolute;
+	width: 10%;
 	display: block;
 	background-color: rgba(41, 41, 41, 0.8);
+	z-index: 10000;
+	float: left;
 }
 
 .nav-item {
@@ -63,8 +81,8 @@ SVG Icons - svgicons.sparkk.fr
 ----- */
 
 .svg-icon {
-  width: 3em;
-  height: 3em;
+  width: 4em;
+  height: 4em;
 }
 
 .svg-icon path,
