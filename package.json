@@ -4,14 +4,18 @@
   "author": "Graham Barber",
   "description": "The website of GL0V Games.",
   "dependencies": {
-    "bower": "*",
+	  "express": "*",
+	  "morgan": "*",
+	  "body-parser": "*"
+  },
+  "devDependencies": {
     "gulp": "*",
-    "gulp-concat": "^2.5.2",
-    "gulp-connect": "*",
     "gulp-html-replace": "*",
+	"gulp-minify-css": "*",
     "gulp-jade": "*",
     "gulp-less": "*",
     "gulp-minify-html": "*",
-    "gulp-rsync": "*"
+    "gulp-rsync": "*",
+	"gulp-uglify": "*"
   }
 }
