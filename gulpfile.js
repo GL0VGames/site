@@ -13,6 +13,11 @@ gulp.task("build", function () {
 		.pipe(jade())
 		.pipe(minifyHTML())
 		.pipe(gulp.dest("dist/public/"));
+		
+	gulp.src("src/public/pages/**.jade")
+		.pipe(jade())
+		.pipe(minifyHTML())
+		.pipe(gulp.dest("dist/public/pages/"));
 
 	gulp.src("src/public/less/index.less")
 		.pipe(less())
