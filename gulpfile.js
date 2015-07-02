@@ -9,17 +9,20 @@ var rsync = require("gulp-rsync");
 
 //	Process files move them to dist/
 gulp.task("build", function () {
-	gulp.src("src/index.jade")
+	gulp.src("src/public/index.jade")
 		.pipe(jade())
 		.pipe(minifyHTML())
-		.pipe(gulp.dest("dist/"));
+		.pipe(gulp.dest("dist/public/"));
 
-	gulp.src("src/less/index.less")
+	gulp.src("src/public/less/index.less")
 		.pipe(less())
-		.pipe(gulp.dest("dist/css/"));
+		.pipe(gulp.dest("dist/public/css/"));
 
-	gulp.src("src/js/**.js")
-		.pipe(gulp.dest("dist/js/"));
+	gulp.src("src/public/js/**.js")
+		.pipe(gulp.dest("dist/public/js/"));
+
+	gulp.src("src/server.js")
+		.pipe(gulp.dest("dist/"));
 
 });
 
@@ -34,9 +37,9 @@ gulp.task("test", ["build"], function () {
 		port: 8080,
 		livereload: true
 	});
-	gulp.watch("src/**", ["build", "reload"]);
-	gulp.watch("src/less/**", ["build", "reload"]);
-	gulp.watch("src/js/**.*", ["build", "reload"]);
+	gulp.watch("src//public/**", ["build", "reload"]);
+	gulp.watch("src/public/less/**", ["build", "reload"]);
+	gulp.watch("src/public/js/**.*", ["build", "reload"]);
 });
 
 //	Sync changes to monochromicon.me
