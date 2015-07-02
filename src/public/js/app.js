@@ -3,32 +3,32 @@ var app = angular.module("site", ["ngRoute"]);
 app.config(function ($routeProvider) {
 	$routeProvider
 		.when("/", {
-			templateURL: "pages/home.html",
+			templateUrl: "pages/home.html",
 			controller: "homeController"
 		})
 		.when("/about", {
-			templateURL: "pages/about.html",
+			templateUrl: "pages/about.html",
 			controller: "aboutController"
 		})
 		.when("/portfolio", {
-			templateURL: "pages/portfolio.html",
+			templateUrl: "pages/portfolio.html",
 			controller: "portfolioController"
 		});
 		
 });
 
-app.controller("mainController", function ($scope) {
-	
-});
+app.controller("mainController", ["$scope", "$location", function ($scope) {
+	$scope.data = "Main!";
+}]);
 
-app.controller("homeController", function ($scope) {
-	
-});
+app.controller("homeController", ["$scope", "$location", function ($scope) {
+	$scope.data1 = "Home!";
+}]);
 
-app.controller("aboutController", function ($scope) {
-	
-});
+app.controller("aboutController", ["$scope", "$location", function ($scope) {
+	$scope.data1 = "About!";
+}]);
 
-app.controller("portfolioController", function ($scope) {
-	
-});
+app.controller("portfolioController", ["$scope", "$location", function ($scope) {
+	$scope.data1 = "Portfolio!";
+}]);
