@@ -1,21 +1,21 @@
 {
-  "name": "GL0VGAMES",
-  "version": "0.0.0",
-  "author": "Graham Barber",
-  "description": "The website of GL0V Games.",
-  "dependencies": {
-	  "express": "*",
-	  "morgan": "*",
-	  "body-parser": "*"
-  },
-  "devDependencies": {
-    "gulp": "*",
-    "gulp-html-replace": "*",
-	"gulp-minify-css": "*",
-    "gulp-jade": "*",
-    "gulp-less": "*",
-    "gulp-minify-html": "*",
-    "gulp-rsync": "*",
-	"gulp-uglify": "*"
-  }
+	"name": "GL0VGAMES",
+	"version": "0.0.0",
+	"author": "Graham Barber",
+	"description": "The website of GL0V Games.",
+	"dependencies": {
+		"express": "*",
+		"morgan": "*",
+		"body-parser": "*"
+	},
+	"devDependencies": {
+		"gulp": "*",
+		"gulp-html-replace": "*",
+		"gulp-minify-css": "*",
+		"gulp-jade": "*",
+		"gulp-less": "*",
+		"gulp-minify-html": "*",
+		"gulp-rsync": "*",
+		"gulp-uglify": "*"
+	}
 }
